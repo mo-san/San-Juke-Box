@@ -1,0 +1,59 @@
+@import url("./sanitize.css");
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  --fps-top: 0px;
+  --fps-left: 0px;
+  /* Web font from Typesquare */
+  font-family: "UD新ゴNT R", "sans-serif";
+}
+
+main {
+  min-height: 100vh;
+}
+
+/* to make fonts look smooth */
+p {
+  transform: rotate(0.03deg);
+}
+
+
+/* for Stats.js */
+#fps-hands > div,
+#fps-stage > div {
+  position: unset !important;
+  inset: unset !important;
+}
+
+/* TweakPane */
+.tp-dfwv {
+  right: 100px !important;
+  display: none !important;
+}
+
+
+#media .textalive-media-wrapper {
+  display: none;
+}
+
+
+/* a patch for react-smooth-dnd */
+.smooth-dnd-container.vertical > .smooth-dnd-draggable-wrapper {
+  overflow: visible !important;
+  position: relative;
+}
+
+.smooth-dnd-container.vertical > .smooth-dnd-draggable-wrapper:nth-of-type(1) {z-index: 1;}
+
+.smooth-dnd-container.vertical > .smooth-dnd-draggable-wrapper:nth-of-type(2) {z-index: 2;}
+
+.smooth-dnd-container.vertical > .smooth-dnd-draggable-wrapper:nth-of-type(3) {z-index: 3;}
+
+.smooth-dnd-container.vertical > .smooth-dnd-draggable-wrapper:nth-of-type(4) {z-index: 4;}
+
+.smooth-dnd-container.vertical > .smooth-dnd-draggable-wrapper:nth-of-type(5) {z-index: 5;}
+
+.smooth-dnd-container.vertical > .smooth-dnd-draggable-wrapper:nth-of-type(6) {z-index: 6;}

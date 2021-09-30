@@ -1,3 +1,4 @@
+// @ts-ignore
 module.exports = {
   env: {
     "browser": true,
@@ -18,12 +19,20 @@ module.exports = {
     }
   },
   rules: {
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/member-delimiter-style": ["warn", {"multiline": {"delimiter": "semi"}}],
     "@typescript-eslint/indent": "off",
     "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/quotes": "off",
+    "arrow-parens": ["warn", "always"],
     "indent": ["warn", 2, {"ignoredNodes": ["ConditionalExpression"]}],
-    "quotes": ["warn", "double"],
+    "max-len": "off",
+    "no-irregular-whitespace": "off",
+    "quotes": ["warn", "double", {"allowTemplateLiterals": true, "avoidEscape": true}],
+    "react/display-name": "off",
     "semi": ["warn", "always", {"omitLastInOneLineBlock": true}],
   },
 }

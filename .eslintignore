@@ -1,6 +1,7 @@
 node_modules/
 dist/
 @types/
+src/lib/
 
 .eslintrc.cjs
-esbuild.config.mjs
+esbuild.mjs
