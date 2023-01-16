@@ -4,7 +4,7 @@ import serve, { error as logError, log } from "create-serve";
 
 const watchChanges = process.argv.slice(2).includes("--watch");
 const isDevelopment = watchChanges || process.env.NODE_ENV === "development";
-const distRoot = "dist";
+const distRoot = "dist_es";
 
 function copyAssets() {
   const targets = [
