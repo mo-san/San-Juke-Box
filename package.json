@@ -15,7 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "@mediapipe/camera_utils": "^0.3.1620247984",
-    "@mediapipe/hands": "^0.3.1629416409",
+    "@mediapipe/hands": "^0.4.0",
     "@seregpie/three.text-sprite": "^3.2.0",
     "detect-gpu": "^3.1.17",
     "gsap": "^3.7.1",
