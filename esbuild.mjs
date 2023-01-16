@@ -18,7 +18,7 @@ function copyAssets() {
   Promise.all(targets.map(async ([src, dest]) => copy(src, dest)));
 }
 
-emptyDirSync("dist");
+emptyDirSync(distRoot);
 copyAssets();
 
 // options for esbuild

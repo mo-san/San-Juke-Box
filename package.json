@@ -2,7 +2,7 @@
   "name": "san-juke-box",
   "version": "1.0.0",
   "description": "A Jukebox-like app with Vocaloid characters singing",
-  "main": "dist/index.js",
+  "main": "docs/index.js",
   "type": "commonjs",
   "scripts": {
     "prebuild": "node prebuild.js",

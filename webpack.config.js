@@ -5,7 +5,7 @@ const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 
 const watchChanges = process.argv.slice(2).includes("--watch");
 const isDevelopment = watchChanges || process.env.NODE_ENV === "development";
-const distRoot = "dist";
+const distRoot = "docs";
 
 module.exports = {
   entry: "./src/index.tsx",
